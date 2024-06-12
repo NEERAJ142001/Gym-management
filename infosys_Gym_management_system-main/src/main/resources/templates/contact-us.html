@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gym</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .gym-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" action="/contact-us" method="post">
+            <label for="from">Your Email:</label><br>
+            <input type="email" id="from" name="from" required><br>
+            
+            <label for="inquiryType">Type of Inquiry:</label><br>
+            <select id="inquiryType" name="inquiryType" required>
+                <option value="">Select Inquiry Type</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Membership Inquiry">Membership Inquiry</option>
+                <option value="Training Inquiry">Training Inquiry</option>
+                <!-- Add more options as needed -->
+            </select><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <img src="contactus.jpg" alt="Gym Image" class="gym-image">
+    </div>
+</body>
+</html>

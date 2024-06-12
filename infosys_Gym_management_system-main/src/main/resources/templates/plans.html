@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f4f4f4;
+        }
+        header {
+            background: #222;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .pricing-card {
+            background: #fff;
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .pricing-card h3 {
+            background: #f09d51;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .pricing-card p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .pricing-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+        .pricing-card .price {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Pricing Plans</h1>
+        </div>
+    </header>
+
+    <!-- Pricing Plans Section -->
+    <section class="pricing-plans">
+        <div class="container">
+            <h2>Choose the plan that fits you best</h2>
+            <div class="pricing-table">
+                <!-- Plan 1 -->
+                <div class="pricing-card">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$20 / month</p>
+                    <ul>
+                        <li>Access to all gym equipment</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Locker room access</li>
+                        <li>1 free training session</li>
+                    </ul>
+                </div>
+                <!-- Plan 2 -->
+                <div class="pricing-card">
+                    <h3>Standard Plan</h3>
+                    <p class="price">$50 / month</p>
+                    <ul>
+                        <li>Access to all gym equipment</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Locker room access</li>
+                        <li>5 free training sessions</li>
+                        <li>Access to group classes</li>
+                    </ul>
+                </div>
+                <!-- Plan 3 -->
+                <div class="pricing-card">
+                    <h3>Premium Plan</h3>
+                    <p class="price">$90 / month</p>
+                    <ul>
+                        <li>Access to all gym equipment</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Locker room access</li>
+                        <li>Unlimited training sessions</li>
+                        <li>Access to group classes</li>
+                        <li>Free diet consultation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gym Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
